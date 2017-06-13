@@ -2,6 +2,6 @@
 
 Make your own drink depending on what your feeling today.
 Over 2000 drink choices with instructional videos!
-(there is a hidden easter egg)
+(find the bonus hidden feature)
 
 Website: absolute-flavor.firebaseapp.com
