@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link href='https://fonts.googleapis.com/css?family=Lobster|Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster|Spectral:600i' rel='stylesheet' type='text/css'>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
   </head>
   <body>
 
@@ -13,71 +17,92 @@
 <!-- 1*********** -->
 <div id="Page1" class="page" style="">
   <div class="wrapper">
-  <div id="hero">
-    <h1 id="wyf">What's your flavor?</h1>
-    <div class="center-page">
-    <br>
 
-    <button onclick="show('Page2');" class="btn blue" type="button" name="button">Tell me what's your flavor?</button>
-    </div>
-  </div>
+      <div class="hero">
+          <div class="row">
+            <div class="col m12">
+              <h1 id="wyf" class="center-align">What's your flavor?</h1>
+            </div>
+            <div class="col m12 center-align center-page">
+              <button onclick="show('Page2');" class="center-align btnz bluez" type="button" name="button">Tell me what's your flavor?</button>
+            </div>
+          </div>
+      </div>
+
   </div>
 </div>
+
 <!-- 2 definition  ---->
 <div id="Page2" class="page" style="display:none">
   <div class="wrapper">
-  <div id="heroDefinitive">
-    <!-- <div class="center-page2"> -->
-      <h1 id="flavors">Savor the flavors!</h1>
-    <br>
-    <div id="flavorDiv">
-      <div id=incomplete>
-        <p>
-        <u>Carbonated:</u> "Want to have fun? add a little pizzazz with carbonation. Carbonation emits small bubbles that fizzes and tingles on the tongue."
-        </p>
-        <p>
-        <u>Sweet:</u> "Something for the dessert or you just want something that taste like candy? Try the ABSOLUT Chocolate Masked Martini it will definitely fill the cravings for your sweet tooth."
-        </p>
-        <p>
-        <u>Herb:</u> "What taste is herb, you might very well wonder? Well, drinks with flavoured basil, rosemary and thyme goes in this category. A significant drink with a herby taste is for example the Absolut Basil - a sweet marriage between peppar and basil."
-        </p>
-        <p>
-        <u>Fresh:</u> "Want to indulge in something fresh? Well here you are. The thing about fresh drinks is that they often include fruits like lemon to give a light and refreshing taste. Try the Daiquiri if you want a classic in this category."
-        </p>
+    <div class="hero2">
+      <div class="row">
+
+        <div class="col m4 offset-m1">
+          <h1 id="flavors">Savor the flavors!</h1>
+        </div>
+        <div class="col m4 offset-m2">
+          <button onclick="show('Page3');" class="btnz brownz" type="button" name="button">I want a drink!</button>
+        </div>
+
+        <div class="col m12">
+          <div id="flavorDiv">
+            <div id=definitions>
+              <p>
+                <u>Carbonated:</u> "Want to have fun? add a little pizzazz with carbonation. Carbonation emits small bubbles that fizzes and tingles on the tongue."
+              </p>
+              <p>
+                <u>Sweet:</u> "Something for the dessert or you just want something that taste like candy? Try the ABSOLUT Chocolate Masked Martini it will definitely fill the cravings for your sweet tooth."
+              </p>
+              <p>
+                <u>Herb:</u> "What taste is herb, you might very well wonder? Well, drinks with flavoured basil, rosemary and thyme goes in this category. A significant drink with a herby taste is for example the Absolut Basil - a sweet marriage between peppar and basil."
+              </p>
+              <p>
+                <u>Fresh:</u> "Want to indulge in something fresh? Well here you are. The thing about fresh drinks is that they often include fruits like lemon to give a light and refreshing taste. Try the Daiquiri if you want a classic in this category."
+              </p>
+
+            </div>
+          </div>
+        </div>
 
       </div>
 
     </div>
-    <button onclick="show('Page3');" class="btn brown" type="button" name="button">Tell me what's your flavor?</button>
-    <!-- </div> -->
-  </div>
   </div>
 </div>
 <!-- 3*********** -->
 <div id="Page3" class="page" style="display:none">
   <div class="wrapper">
-  <div id="hero2">
-    <div class="center-page">
-    <h1 id="carbo">Carbonated?</h1>
-    <form class="form">
-    <div class="switch-field">
-      <input type="radio" id="switch_left1" name="switch_2" value="yes" checked/>
-      <label for="switch_left1">Yes</label>
-      <input type="radio" id="switch_right2" name="switch_2" value="no" />
-      <label for="switch_right2">No</label>
-    </div>
-    </form>
-    <br>
 
-    <button onclick="show('Page4');" class="btn red" type="button" name="button">Next</button>
-    </div>
-  </div>
+    <div class="hero3">
+      <div class="row">
+
+      <div class="col m12">
+        <h1 id="carbo" class="center-align">Carbonated?</h1>
+      </div>
+      <div class="col m12 offset-m4">
+        <form>
+          <div class="switch-field ">
+            <input type="radio" id="switch_left1" name="switch_2" value="yes" checked/>
+            <label for="switch_left1">Yes</label>
+            <input type="radio" id="switch_right2" name="switch_2" value="no" />
+            <label for="switch_right2">No</label>
+          </div>
+        </form>
+      </div>
+      <div class="col m12 center-align">
+        <button onclick="show('Page4');" class="center-align btnz redz" type="button" name="button">Next</button>
+      </div>
+     </div>
+
+   </div>
+
   </div>
 </div>
 <!-- 4*********** -->
 <div id="Page4" class="page" style="display:none">
   <div class="wrapper">
-  <div id="hero3">
+  <div id="hero4">
     <div class="center-page">
     <h1 id="swt">Sweet?</h1>
     <form class="form">
@@ -119,7 +144,7 @@
 <!-- 6*********** -->
 <div id="Page6" class="page" style="display:none">
   <div class="wrapper">
-  <div id="hero4">
+  <div id="hero5">
     <div class="center-page">
     <h1 id="swt">Fresh?</h1>
     <form class="form">
@@ -140,7 +165,7 @@
 <!-- 7*********** -->
 <div id="Page7" class="page" style="display:none">
   <div class="wrapper">
-  <div id="hero5">
+  <div id="hero6">
     <div class="outside">
       <h1 id="final"></h1>
        <ul id="recipes">
