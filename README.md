@@ -4,4 +4,4 @@ Make your own drink depending on what your feeling today.
 Over 2000 drink choices with instructional videos!
 (find the bonus hidden feature)
 
-Website: absolute-flavor.firebaseapp.com
+https://whats-your-flavor.firebaseapp.com

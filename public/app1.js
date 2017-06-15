@@ -69,7 +69,7 @@ function callback(){
         }
         //adding youtube video******
         var addYoutube = document.createElement("p")
-        addYoutube.innerHTML = '<iframe id="tube" width="100%" height="485vh" src="http://www.youtube.com/embed/'+ youTbe +'" ></iframe>'
+        addYoutube.innerHTML = '<iframe id="tube" width="100%" height="485vh" src="https://www.youtube.com/embed/'+ youTbe +'" ></iframe>'
         // console.log("tube: ", addYoutube);
         vid.appendChild(addYoutube)
         //end adding youtube video*****
@@ -100,7 +100,7 @@ function callback(){
     frsh_type = "tasting/fresh"
   }
 //END url changing variables depending on options******************
-  allYes.open("GET",'http://cors-anywhere.herokuapp.com/https://addb.absolutdrinks.com/drinks/'+fizz_type+'/hasvideo/'+swt_type+'/'+hrb_type+'/'+frsh_type+'/not/tasting/spicy?apiKey=6efe02f32b424625b018db817dfe686d');
+  allYes.open("GET",'https://cors-anywhere.herokuapp.com/https://addb.absolutdrinks.com/drinks/'+fizz_type+'/hasvideo/'+swt_type+'/'+hrb_type+'/'+frsh_type+'/not/tasting/spicy?apiKey=6efe02f32b424625b018db817dfe686d');
   allYes.send()
 }
 // /not/tasting/sweet/tasting/herb/not/tasting/fresh
@@ -137,7 +137,7 @@ function callback(){
         }
         //adding youtube video******
         var addYoutube = document.createElement("p")
-        addYoutube.innerHTML = '<iframe id="tube" width="100%" height="485vh" src="http://www.youtube.com/embed/'+ youTbe +'" ></iframe>'
+        addYoutube.innerHTML = '<iframe id="tube" width="100%" height="485vh" src="https://www.youtube.com/embed/'+ youTbe +'" ></iframe>'
         // console.log("tube: ", addYoutube);
         vid.appendChild(addYoutube)
         //end adding youtube video*****
@@ -172,7 +172,7 @@ function callback(){
   spcy_type = "tasting/spicy"
    }
 //END url changing variables depending on options******************
-  all1.open("GET",'http://cors-anywhere.herokuapp.com/https://addb.absolutdrinks.com/drinks/'+fizz_type+'/hasvideo/'+swt_type+'/'+hrb_type+'/'+frsh_type+'/'+spcy_type+'?apiKey=6efe02f32b424625b018db817dfe686d');
+  all1.open("GET",'https://cors-anywhere.herokuapp.com/https://addb.absolutdrinks.com/drinks/'+fizz_type+'/hasvideo/'+swt_type+'/'+hrb_type+'/'+frsh_type+'/'+spcy_type+'?apiKey=6efe02f32b424625b018db817dfe686d');
   all1.send()
 }
 
