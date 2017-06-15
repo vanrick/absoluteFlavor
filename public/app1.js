@@ -69,7 +69,7 @@ function callback(){
         }
         //adding youtube video******
         var addYoutube = document.createElement("p")
-        addYoutube.innerHTML = '<iframe id="tube" width="47%" height="400vh" src="http://www.youtube.com/embed/'+ youTbe +'" ></iframe>'
+        addYoutube.innerHTML = '<iframe id="tube" width="100%" height="485vh" src="http://www.youtube.com/embed/'+ youTbe +'" ></iframe>'
         // console.log("tube: ", addYoutube);
         vid.appendChild(addYoutube)
         //end adding youtube video*****
@@ -137,7 +137,7 @@ function callback(){
         }
         //adding youtube video******
         var addYoutube = document.createElement("p")
-        addYoutube.innerHTML = '<iframe id="tube" width="45%" height="480vh" src="http://www.youtube.com/embed/'+ youTbe +'" ></iframe>'
+        addYoutube.innerHTML = '<iframe id="tube" width="100%" height="485vh" src="http://www.youtube.com/embed/'+ youTbe +'" ></iframe>'
         // console.log("tube: ", addYoutube);
         vid.appendChild(addYoutube)
         //end adding youtube video*****

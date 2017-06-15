@@ -1,207 +1,225 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
     <link href='https://fonts.googleapis.com/css?family=Lobster|Spectral:600i' rel='stylesheet' type='text/css'>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
-    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-  </head>
-  <body>
+</head>
 
-<header></header>
-<!-- 1*********** -->
-<div id="Page1" class="page" style="">
-  <div class="wrapper">
+<body>
 
-      <div class="hero">
-          <div class="row">
-            <div class="col m12">
-              <h1 id="wyf" class="center-align">What's your flavor?</h1>
+    <header></header>
+    <!-- 1*********** -->
+    <div id="Page1" class="page" style="">
+        <div class="wrapper">
+
+            <div class="hero">
+                <div class="row">
+                    <div class="col m12">
+                        <h1 id="wyf" class="center-align">What's your flavor?</h1>
+                    </div>
+                    <div class="col m12 center-align">
+                        <button onclick="show('Page2');" class="center-align btnz bluez" type="button" name="button">Tell me what's your flavor?</button>
+                    </div>
+                </div>
             </div>
-            <div class="col m12 center-align center-page">
-              <button onclick="show('Page2');" class="center-align btnz bluez" type="button" name="button">Tell me what's your flavor?</button>
+
+        </div>
+    </div>
+
+    <!-- 2 definition  ---->
+    <div id="Page2" class="page" style="display:none">
+        <div class="wrapper">
+            <div class="hero2">
+                <div class="row">
+
+                    <div class="col m4 offset-m1">
+                        <h1 id="flavors">Savor the flavors!</h1>
+                    </div>
+                    <div class="col m4 offset-m2">
+                        <button onclick="show('Page3');" class="btnz brownz" type="button" name="button">I want a drink!</button>
+                    </div>
+
+                    <div class="col m12">
+                        <div id="flavorDiv">
+                            <div id=definitions>
+                                <p>
+                                    <u>Carbonated:</u> "Want to have fun? add a little pizzazz with carbonation. Carbonation emits small bubbles that fizzes and tingles on the tongue."
+                                </p>
+                                <p>
+                                    <u>Sweet:</u> "Something for the dessert or you just want something that taste like candy? Try the ABSOLUT Chocolate Masked Martini it will definitely fill the cravings for your sweet tooth."
+                                </p>
+                                <p>
+                                    <u>Herb:</u> "What taste is herb, you might very well wonder? Well, drinks with flavoured basil, rosemary and thyme goes in this category. A significant drink with a herby taste is for example the Absolut Basil - a
+                                    sweet marriage between peppar and basil."
+                                </p>
+                                <p>
+                                    <u>Fresh:</u> "Want to indulge in something fresh? Well here you are. The thing about fresh drinks is that they often include fruits like lemon to give a light and refreshing taste. Try the Daiquiri if you want a classic
+                                    in this category."
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-          </div>
-      </div>
-
-  </div>
-</div>
-
-<!-- 2 definition  ---->
-<div id="Page2" class="page" style="display:none">
-  <div class="wrapper">
-    <div class="hero2">
-      <div class="row">
-
-        <div class="col m4 offset-m1">
-          <h1 id="flavors">Savor the flavors!</h1>
         </div>
-        <div class="col m4 offset-m2">
-          <button onclick="show('Page3');" class="btnz brownz" type="button" name="button">I want a drink!</button>
-        </div>
+    </div>
+    <!-- 3*********** -->
+    <div id="Page3" class="page" style="display:none">
+        <div class="wrapper">
 
-        <div class="col m12">
-          <div id="flavorDiv">
-            <div id=definitions>
-              <p>
-                <u>Carbonated:</u> "Want to have fun? add a little pizzazz with carbonation. Carbonation emits small bubbles that fizzes and tingles on the tongue."
-              </p>
-              <p>
-                <u>Sweet:</u> "Something for the dessert or you just want something that taste like candy? Try the ABSOLUT Chocolate Masked Martini it will definitely fill the cravings for your sweet tooth."
-              </p>
-              <p>
-                <u>Herb:</u> "What taste is herb, you might very well wonder? Well, drinks with flavoured basil, rosemary and thyme goes in this category. A significant drink with a herby taste is for example the Absolut Basil - a sweet marriage between peppar and basil."
-              </p>
-              <p>
-                <u>Fresh:</u> "Want to indulge in something fresh? Well here you are. The thing about fresh drinks is that they often include fruits like lemon to give a light and refreshing taste. Try the Daiquiri if you want a classic in this category."
-              </p>
+            <div class="hero3">
+                <div class="row">
+
+                    <div class="col m12">
+                        <h1 id="carbo" class="center-align">Carbonated?</h1>
+                    </div>
+                    <div class="col m12 offset-m4">
+                        <form>
+                            <div class="switch-field">
+                                <input type="radio" id="switch_left1" name="switch_2" value="yes" checked/>
+                                <label for="switch_left1"><span>Yes</span></label>
+                                <input type="radio" id="switch_right2" name="switch_2" value="no" />
+                                <label for="switch_right2"><span>No</span></label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col m12 center-align">
+                        <button onclick="show('Page4');" class="center-align btnz redz" type="button" name="button">Next</button>
+                    </div>
+                </div>
 
             </div>
-          </div>
+
         </div>
-
-      </div>
-
     </div>
-  </div>
-</div>
-<!-- 3*********** -->
-<div id="Page3" class="page" style="display:none">
-  <div class="wrapper">
-
-    <div class="hero3">
-      <div class="row">
-
-      <div class="col m12">
-        <h1 id="carbo" class="center-align">Carbonated?</h1>
-      </div>
-      <div class="col m12 offset-m4">
-        <form>
-          <div class="switch-field ">
-            <input type="radio" id="switch_left1" name="switch_2" value="yes" checked/>
-            <label for="switch_left1">Yes</label>
-            <input type="radio" id="switch_right2" name="switch_2" value="no" />
-            <label for="switch_right2">No</label>
-          </div>
-        </form>
-      </div>
-      <div class="col m12 center-align">
-        <button onclick="show('Page4');" class="center-align btnz redz" type="button" name="button">Next</button>
-      </div>
-     </div>
-
-   </div>
-
-  </div>
-</div>
-<!-- 4*********** -->
-<div id="Page4" class="page" style="display:none">
-  <div class="wrapper">
-  <div id="hero4">
-    <div class="center-page">
-    <h1 id="swt">Sweet?</h1>
-    <form class="form">
-    <div class="switch-field">
-      <input type="radio" id="switch_left3" name="switch_2" value="yes"checked/>
-      <label for="switch_left3">Yes</label>
-      <input type="radio" id="switch_right4" name="switch_2" value="no" />
-      <label for="switch_right4">No</label>
+    <!-- 4*********** -->
+    <div id="Page4" class="page" style="display:none">
+        <div class="wrapper">
+            <div id="hero4">
+                <div class="row">
+                    <div class="col m12">
+                        <h1 id="swt" class="center-align">Sweet?</h1>
+                    </div>
+                    <div class="col m12 offset-m4">
+                        <form>
+                            <div class="switch-field">
+                                <input type="radio" id="switch_left3" name="switch_2" value="yes" checked/>
+                                <label for="switch_left3"><span>Yes</span></label>
+                                <input type="radio" id="switch_right4" name="switch_2" value="no" />
+                                <label for="switch_right4"><span>No</span></label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col m12 center-align">
+                        <button onclick="show('Page5');" class="center-align btnz yellowz" type="button" name="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </form>
-    <br>
-
-    <button onclick="show('Page5');" class="btn yellow" type="button" name="button">Next</button>
+    <!-- 5 Herb*********** -->
+    <div id="Page5" class="page" style="display:none">
+        <div class="wrapper">
+            <div id="herbImg">
+                <div class="row">
+                    <div class="col m12 center-align">
+                        <h1 id="hrb">Herbaceous?</h1>
+                    </div>
+                    <div class="col m12 offset-m4">
+                        <form class="form">
+                            <div class="switch-field">
+                                <input type="radio" id="herb_left" name="switch_2" value="yes" checked/>
+                                <label for="herb_left"><span>Yes</span></label>
+                                <input type="radio" id="herb_right" name="switch_2" value="no" />
+                                <label for="herb_right"><span>No</span></label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col m12 center-align">
+                        <button onclick="show('Page6');" class="center-align btnz goldz" type="button" name="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  </div>
-</div>
-<!-- 5 Herb*********** -->
-<div id="Page5" class="page" style="display:none">
-  <div class="wrapper">
-  <div id="herbImg">
-    <div class="center-page">
-    <h1 id="hrb">Herbaceous?</h1>
-    <form class="form">
-    <div class="switch-field">
-      <input type="radio" id="herb_left" name="switch_2" value="yes"checked/>
-      <label for="herb_left">Yes</label>
-      <input type="radio" id="herb_right" name="switch_2" value="no" />
-      <label for="herb_right">No</label>
+    <!-- 6*********** -->
+    <div id="Page6" class="page" style="display:none">
+        <div class="wrapper">
+            <div id="hero5">
+                <div class="row">
+                    <div class="col m12 center-align">
+                        <h1 id="swt">Fresh?</h1>
+                    </div>
+                    <div class="col m12 offset-m4">
+                        <form class="form">
+                            <div class="switch-field">
+                                <input type="radio" id="switch_left" name="switch_2" value="yes" checked/>
+                                <label for="switch_left"><span>Yes</span></label>
+                                <input type="radio" id="switch_right" name="switch_2" value="no" />
+                                <label for="switch_right"><span>No</span></label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col m12 center-align">
+                        <button onclick="show('Page7');" id="appendBtn" class="center-align btnz orangez" type="button" name="button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </form>
-    <br>
-
-    <button onclick="show('Page6');" class="btn gold" type="button" name="button">Next</button>
-    </div>
-  </div>
-  </div>
-</div>
-<!-- 6*********** -->
-<div id="Page6" class="page" style="display:none">
-  <div class="wrapper">
-  <div id="hero5">
-    <div class="center-page">
-    <h1 id="swt">Fresh?</h1>
-    <form class="form">
-    <div class="switch-field">
-      <input type="radio" id="switch_left" name="switch_2" value="yes" checked/>
-      <label for="switch_left">Yes</label>
-      <input type="radio" id="switch_right" name="switch_2" value="no" />
-      <label for="switch_right">No</label>
-    </div>
-    </form>
-    <br>
-
-    <button onclick="show('Page7');" id="appendBtn" class="btn orange" type="button" name="button">Next</button>
-    </div>
-  </div>
-  </div>
-</div>
-<!-- 7*********** -->
-<div id="Page7" class="page" style="display:none">
-  <div class="wrapper">
-  <div id="hero6">
-    <div class="outside">
-      <h1 id="final"></h1>
-       <ul id="recipes">
-
-       </ul>
-       <!-- <div id="bac" alt="" /><img id="bacos" src="images/baco.png" alt="" /></div> -->
-    </div>
-    <div id="youtube">
-    </div>
-    <div class="divbutton">
-      <input id="spicyImg" accept="" type="image" src="images/pepper.png" alt="Submit" />
-    </div>
-    <div class="divbutton">
+    <!-- 7*********** -->
+    <div id="Page7" class="page" style="display:none">
+        <div class="wrapper">
+            <div class="row">
+                <div id="hero6">
+                    <div class="col m6 outside">
+                        <h1 id="final" class="center-align"></h1>
+                        <ul id="recipes"></ul>
+                    </div>
+                    <div class="col m6">
+                      <div id="youtube"></div>
+                      <div class="divbutton">
+                        <input id="spicyImg" accept="" type="image" src="images/pepper.png" alt="Submit" />
+                      </div>
+                      <button class="center-align btnz purplez" onClick="location.reload();" type="button" name="button">I Want Another Drink?</button>
+                    </div>
+                    <!-- <div class="divbutton">
       <input id="bcnImg" onclick="myFunction()" accept="" type="image" src="images/5126.png" alt="Submit">
-    </div>
-    <br>
-      <button class="btn purple" onClick="location.reload();" type="button" name="button">Want Another Drink?</button>
+    </div> -->
+                    <!-- <div class="col m12 center-align"> -->
+                    <!-- </div> -->
 
-  </div>
-  </div>
-</div>
-<!-- scripts*********** -->
-<script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
-<script>
-// Initialize Firebase
-var config = {
-  apiKey: "AIzaSyABtqvluFmeBSdxcZLwdbVFPpVvUL7_XZE",
-  authDomain: "absolute-flavor.firebaseapp.com",
-  databaseURL: "https://absolute-flavor.firebaseio.com",
-  storageBucket: "absolute-flavor.appspot.com",
-};
-firebase.initializeApp(config);
-</script>
-  <script src="https://assets.absolutdrinks.com/api/addb-0.5.2.min.js" type="text/javascript"></script>
-  <script src="app1.js" charset="utf-8"></script>
-  <script src="app2.js" charset="utf-8"></script>
-  <footer></footer>
-  </body>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- scripts*********** -->
+    <script src="https://www.gstatic.com/firebasejs/3.3.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyABtqvluFmeBSdxcZLwdbVFPpVvUL7_XZE",
+            authDomain: "absolute-flavor.firebaseapp.com",
+            databaseURL: "https://absolute-flavor.firebaseio.com",
+            storageBucket: "absolute-flavor.appspot.com",
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="https://assets.absolutdrinks.com/api/addb-0.5.2.min.js" type="text/javascript"></script>
+    <script src="app1.js" charset="utf-8"></script>
+    <script src="app2.js" charset="utf-8"></script>
+    <footer></footer>
+</body>
+
 </html>
